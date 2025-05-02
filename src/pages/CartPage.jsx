@@ -104,7 +104,6 @@ const CartPage = () => {
   const subtotal = getTotalPrice().toFixed(2);
 
   const handleCheckout = () => {
-    // Clear cart and navigate to checkout success page
     clearCart();
     navigate("/checkout-success");
   };

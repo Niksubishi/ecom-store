@@ -141,7 +141,6 @@ const ContactForm = () => {
       [name]: value,
     }));
 
-    // Clear error for this field when the user types
     if (errors[name]) {
       setErrors((prev) => ({
         ...prev,
@@ -154,10 +153,8 @@ const ContactForm = () => {
     e.preventDefault();
 
     if (validateForm()) {
-      // Form is valid, submit the data
       console.log("Form data:", formData);
 
-      // Reset form
       setFormData({
         fullName: "",
         email: "",
@@ -165,10 +162,8 @@ const ContactForm = () => {
         body: "",
       });
 
-      // Show success message
       setSubmitted(true);
 
-      // Hide success message after 5 seconds
       setTimeout(() => {
         setSubmitted(false);
       }, 5000);

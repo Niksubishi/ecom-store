@@ -67,7 +67,6 @@ const SearchBar = ({ onSearch }) => {
   const searchRef = useRef(null);
   const navigate = useNavigate();
 
-  // Handle clicks outside the search component
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (searchRef.current && !searchRef.current.contains(event.target)) {
@@ -83,7 +82,7 @@ const SearchBar = ({ onSearch }) => {
 
   const handleInputChange = (e) => {
     setSearchTerm(e.target.value);
-    onSearch(e.target.value); // Pass the search term up to the parent component
+    onSearch(e.target.value);
   };
 
   const handleResultClick = (productId) => {
