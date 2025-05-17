@@ -110,22 +110,18 @@ const ContactForm = () => {
   const validateForm = () => {
     const newErrors = {};
 
-    // Validate Full Name
     if (!formData.fullName || formData.fullName.length < 3) {
       newErrors.fullName = "Full name must be at least 3 characters";
     }
 
-    // Validate Subject
     if (!formData.subject || formData.subject.length < 3) {
       newErrors.subject = "Subject must be at least 3 characters";
     }
 
-    // Validate Email
     if (!formData.email || !validateEmail(formData.email)) {
       newErrors.email = "Please enter a valid email address";
     }
 
-    // Validate Body
     if (!formData.body || formData.body.length < 3) {
       newErrors.body = "Message must be at least 3 characters";
     }
