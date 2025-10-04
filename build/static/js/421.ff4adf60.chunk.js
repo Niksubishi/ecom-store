@@ -29,7 +29,7 @@
   ${e=>{let{onClick:t}=e;return t&&i.AH`
     cursor: pointer;
   `}}
-`,l=e=>{let{children:t,variant:r="default",padding:i="medium",hover:l=!1,className:s,onClick:a}=e;return(0,o.jsx)(n,{variant:r,padding:i,hover:l,className:s,onClick:a,children:t})}},421:(e,t,r)=>{r.r(t),r.d(t,{default:()=>J});var i=r(43),o=r(900),n=r(464),l=r(718),s=r(42),a=r(388),d=r(579);const c=n.Ay.div`
+`,l=e=>{let{children:t,variant:r="default",padding:i="medium",hover:l=!1,className:s,onClick:a}=e;return(0,o.jsx)(n,{variant:r,padding:i,hover:l,className:s,onClick:a,children:t})}},421:(e,t,r)=>{r.r(t),r.d(t,{default:()=>J});var i=r(43),o=r(900),n=r(464),l=r(128),s=r(42),a=r(388),d=r(579);const c=n.Ay.div`
   display: flex;
   gap: 16px;
   padding: 16px;
@@ -139,7 +139,7 @@
   &:hover {
     background-color: ${e=>{let{theme:t}=e;return t.colors.secondary}}11;
   }
-`,z=e=>{var t;let{item:r}=e;const{updateQuantity:o,removeFromCart:n}=(0,l.useCart)(),[s,a]=(0,i.useState)(!1),z=e=>{e>=1&&o(r.id,e)},T=(r.discountedPrice*r.quantity).toFixed(2),H=r.price!==r.discountedPrice;return(0,d.jsxs)(c,{children:[(0,d.jsx)(h,{children:!s&&null!==(t=r.image)&&void 0!==t&&t.url?(0,d.jsx)(m,{src:r.image.url,alt:r.image.alt||r.title,onError:()=>a(!0),loading:"lazy"}):(0,d.jsx)(x,{children:"No Image"})}),(0,d.jsxs)(p,{children:[(0,d.jsx)(u,{children:r.title}),(0,d.jsxs)(g,{children:[(0,d.jsxs)(y,{children:["$",r.discountedPrice.toFixed(2)]}),H&&(0,d.jsxs)(f,{children:["$",r.price.toFixed(2)]})]}),(0,d.jsxs)(b,{children:[(0,d.jsxs)(j,{children:[(0,d.jsx)($,{onClick:()=>z(r.quantity-1),disabled:r.quantity<=1,"aria-label":"Decrease quantity",children:"\u2212"}),(0,d.jsx)(A,{children:r.quantity}),(0,d.jsx)($,{onClick:()=>z(r.quantity+1),"aria-label":"Increase quantity",children:"+"})]}),(0,d.jsxs)(v,{children:[(0,d.jsx)(w,{children:"Subtotal"}),(0,d.jsxs)(k,{children:["$",T]})]}),(0,d.jsx)(C,{onClick:()=>{window.confirm(`Remove ${r.title} from your cart?`)&&n(r.id)},children:"Remove"})]})]})]})},T=(0,i.memo)(z);var H=r(230);const F=n.Ay.div`
+`,z=e=>{var t;let{item:r}=e;const{updateQuantity:o,removeFromCart:n}=(0,l._)(),[s,a]=(0,i.useState)(!1),z=e=>{e>=1&&o(r.id,e)},T=(r.discountedPrice*r.quantity).toFixed(2),H=r.price!==r.discountedPrice;return(0,d.jsxs)(c,{children:[(0,d.jsx)(h,{children:!s&&null!==(t=r.image)&&void 0!==t&&t.url?(0,d.jsx)(m,{src:r.image.url,alt:r.image.alt||r.title,onError:()=>a(!0),loading:"lazy"}):(0,d.jsx)(x,{children:"No Image"})}),(0,d.jsxs)(p,{children:[(0,d.jsx)(u,{children:r.title}),(0,d.jsxs)(g,{children:[(0,d.jsxs)(y,{children:["$",r.discountedPrice.toFixed(2)]}),H&&(0,d.jsxs)(f,{children:["$",r.price.toFixed(2)]})]}),(0,d.jsxs)(b,{children:[(0,d.jsxs)(j,{children:[(0,d.jsx)($,{onClick:()=>z(r.quantity-1),disabled:r.quantity<=1,"aria-label":"Decrease quantity",children:"\u2212"}),(0,d.jsx)(A,{children:r.quantity}),(0,d.jsx)($,{onClick:()=>z(r.quantity+1),"aria-label":"Increase quantity",children:"+"})]}),(0,d.jsxs)(v,{children:[(0,d.jsx)(w,{children:"Subtotal"}),(0,d.jsxs)(k,{children:["$",T]})]}),(0,d.jsx)(C,{onClick:()=>{window.confirm(`Remove ${r.title} from your cart?`)&&n(r.id)},children:"Remove"})]})]})]})},T=(0,i.memo)(z);var H=r(230);const F=n.Ay.div`
   max-width: 1000px;
   margin: 0 auto;
   display: flex;
@@ -169,19 +169,19 @@
 `,I=n.Ay.div`
   text-align: center;
   padding: 80px 20px;
-`,N=n.Ay.div`
+`,_=n.Ay.div`
   font-size: 4rem;
   margin-bottom: 16px;
   opacity: 0.3;
-`,Y=n.Ay.h2`
+`,N=n.Ay.h2`
   font-size: 1.5rem;
   margin-bottom: 8px;
   color: ${e=>{let{theme:t}=e;return t.colors.text}};
-`,Z=n.Ay.p`
+`,Y=n.Ay.p`
   font-size: 1rem;
   margin-bottom: 24px;
   color: ${e=>{let{theme:t}=e;return t.colors.lightText}};
-`,O=(0,n.Ay)(H.Z)`
+`,Z=(0,n.Ay)(H.Z)`
   flex: 1;
   height: fit-content;
   position: sticky;
@@ -190,11 +190,11 @@
   @media (max-width: ${e=>{let{theme:t}=e;return t.breakpoints.tablet}}) {
     position: static;
   }
-`,R=n.Ay.h2`
+`,O=n.Ay.h2`
   font-size: 1.3rem;
   margin: 0 0 16px 0;
   color: ${e=>{let{theme:t}=e;return t.colors.text}};
-`,W=n.Ay.div`
+`,R=n.Ay.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -208,7 +208,7 @@
     font-weight: bold;
     font-size: 1.2rem;
   }
-`,_=n.Ay.span`
+`,W=n.Ay.span`
   color: ${e=>{let{theme:t}=e;return t.colors.text}};
 `,D=n.Ay.span`
   color: ${e=>{let{theme:t}=e;return t.colors.text}};
@@ -226,5 +226,5 @@
 `,B=(0,n.Ay)(a.$).attrs({variant:"ghost",size:"small"})`
   color: ${e=>{let{theme:t}=e;return t.colors.secondary}};
   align-self: flex-start;
-`,J=()=>{const{cartItems:e,getTotalPrice:t,clearCart:r,getItemCount:i}=(0,l.useCart)(),{addToast:n}=(0,s.d)(),c=(0,o.Zp)(),h=i(),m=t(),x=.08*m,p=m+0+x,u=()=>{c("/")};return 0===e.length?(0,d.jsxs)(I,{children:[(0,d.jsx)(N,{children:"\ud83d\uded2"}),(0,d.jsx)(Y,{children:"Your cart is empty"}),(0,d.jsx)(Z,{children:"Looks like you haven't added any items to your cart yet."}),(0,d.jsx)(L,{onClick:u,children:"Continue Shopping"})]}):(0,d.jsxs)(F,{children:[(0,d.jsxs)(S,{children:[(0,d.jsxs)(q,{children:[(0,d.jsx)(P,{children:"Shopping Cart"}),(0,d.jsxs)(G,{children:[h," ",1===h?"item":"items"]})]}),(0,d.jsx)("div",{children:e.map((e=>(0,d.jsx)(T,{item:e},e.id)))}),(0,d.jsx)(Q,{children:(0,d.jsx)(B,{onClick:()=>{window.confirm("Are you sure you want to clear your cart?")&&(r(),n({type:"info",title:"Cart Cleared",message:"All items have been removed from your cart."}))},children:"Clear Cart"})})]}),(0,d.jsxs)(O,{children:[(0,d.jsx)(R,{children:"Order Summary"}),(0,d.jsxs)(W,{children:[(0,d.jsxs)(_,{children:["Subtotal (",h," items)"]}),(0,d.jsxs)(D,{children:["$",m.toFixed(2)]})]}),(0,d.jsxs)(W,{children:[(0,d.jsx)(_,{children:"Shipping"}),(0,d.jsx)(D,{children:"Free"})]}),(0,d.jsxs)(W,{children:[(0,d.jsx)(_,{children:"Tax"}),(0,d.jsxs)(D,{children:["$",x.toFixed(2)]})]}),(0,d.jsxs)(W,{children:[(0,d.jsx)(_,{children:"Total"}),(0,d.jsxs)(D,{children:["$",p.toFixed(2)]})]}),(0,d.jsx)(E,{onClick:()=>{0!==e.length&&(r(),n({type:"success",title:"Order Placed!",message:"Thank you for your purchase. Your order has been confirmed."}),c("/checkout-success"))},children:"Proceed to Checkout"}),(0,d.jsx)(a.$,{variant:"outline",fullWidth:!0,onClick:u,style:{marginTop:"12px"},children:"Continue Shopping"})]})]})}}}]);
-//# sourceMappingURL=421.db92519f.chunk.js.map
+`,J=()=>{const{cartItems:e,getTotalPrice:t,clearCart:r,getItemCount:i}=(0,l._)(),{addToast:n}=(0,s.d)(),c=(0,o.Zp)(),h=i(),m=t(),x=.08*m,p=m+0+x,u=()=>{c("/")};return 0===e.length?(0,d.jsxs)(I,{children:[(0,d.jsx)(_,{children:"\ud83d\uded2"}),(0,d.jsx)(N,{children:"Your cart is empty"}),(0,d.jsx)(Y,{children:"Looks like you haven't added any items to your cart yet."}),(0,d.jsx)(L,{onClick:u,children:"Continue Shopping"})]}):(0,d.jsxs)(F,{children:[(0,d.jsxs)(S,{children:[(0,d.jsxs)(q,{children:[(0,d.jsx)(P,{children:"Shopping Cart"}),(0,d.jsxs)(G,{children:[h," ",1===h?"item":"items"]})]}),(0,d.jsx)("div",{children:e.map((e=>(0,d.jsx)(T,{item:e},e.id)))}),(0,d.jsx)(Q,{children:(0,d.jsx)(B,{onClick:()=>{window.confirm("Are you sure you want to clear your cart?")&&(r(),n({type:"info",title:"Cart Cleared",message:"All items have been removed from your cart."}))},children:"Clear Cart"})})]}),(0,d.jsxs)(Z,{children:[(0,d.jsx)(O,{children:"Order Summary"}),(0,d.jsxs)(R,{children:[(0,d.jsxs)(W,{children:["Subtotal (",h," items)"]}),(0,d.jsxs)(D,{children:["$",m.toFixed(2)]})]}),(0,d.jsxs)(R,{children:[(0,d.jsx)(W,{children:"Shipping"}),(0,d.jsx)(D,{children:"Free"})]}),(0,d.jsxs)(R,{children:[(0,d.jsx)(W,{children:"Tax"}),(0,d.jsxs)(D,{children:["$",x.toFixed(2)]})]}),(0,d.jsxs)(R,{children:[(0,d.jsx)(W,{children:"Total"}),(0,d.jsxs)(D,{children:["$",p.toFixed(2)]})]}),(0,d.jsx)(E,{onClick:()=>{0!==e.length&&(r(),n({type:"success",title:"Order Placed!",message:"Thank you for your purchase. Your order has been confirmed."}),c("/checkout-success"))},children:"Proceed to Checkout"}),(0,d.jsx)(a.$,{variant:"outline",fullWidth:!0,onClick:u,style:{marginTop:"12px"},children:"Continue Shopping"})]})]})}}}]);
+//# sourceMappingURL=421.ff4adf60.chunk.js.map
