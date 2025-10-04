@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { Product } from '../../types';
 import { Card } from '../ui/Card';
-import { Button } from '../ui/Button';
 
 interface ProductCardProps {
   product: Product;

@@ -38,14 +38,8 @@ const Logo = styled(Link)`
 const LogoImage = styled.img`
   height: 40px;
   width: auto;
-  margin-right: 8px;
 `;
 
-const LogoText = styled.span`
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    display: none;
-  }
-`;
 
 const RightSection = styled.div`
   display: flex;
@@ -296,7 +290,6 @@ export const Header: React.FC = () => {
               e.currentTarget.style.display = 'none';
             }}
           />
-          <LogoText>eComStore</LogoText>
         </Logo>
 
         <RightSection>
