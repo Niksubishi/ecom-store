@@ -198,6 +198,5 @@ This project was created by Nik Bishop as part of a Noroff education program.
 
 **Built with ❤️ using React, TypeScript, and modern web technologies**
 
-_For questions or support, please refer to the course materials or contact your instructor._
 
 </div>
